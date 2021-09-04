@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+#스프링 부트 매뉴얼의 reference doc를 통해 설정정보를 추가하는 방법을 학습습
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+#        show_sql: true
+        format_sql: true
+
+# JPA, 하이버네이트가 호출한 sql을 로그로 남김
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
