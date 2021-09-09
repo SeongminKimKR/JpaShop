@@ -8,7 +8,7 @@ spring:
 #스프링 부트 매뉴얼의 reference doc를 통해 설정정보를 추가하는 방법을 학습습
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       hibernate:
 #        show_sql: true
