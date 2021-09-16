@@ -13,6 +13,7 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
+        default_batch_fetch_size: 100
 
 # JPA, 하이버네이트가 호출한 sql을 로그로 남김
 logging:
